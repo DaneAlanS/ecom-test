@@ -1,17 +1,18 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
-import Header from "./header-navbar/header";
-import Navbar from "./header-navbar/navbar";
-import SignIn from "./auth/signin";
+import Header from './headernavbar/header';
+import Navbar from './headernavbar/navbar';
 
-export default class Layout extends Component {
+class Layout extends Component {
   render() {
     return (
-      <div className="layout">
-        <Header />
-        <Navbar />
-        <SignIn />
+      <div className='layout'>
+        {this.props.children}
+        <Header/>
+        <Navbar/>
       </div>
     );
   }
 }
+
+export default Layout;

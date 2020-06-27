@@ -1,16 +1,32 @@
+
+
 html {
-  font-size: 62.5%;
+    font-size: 62.5%;
 }
 
 *,
 *::after,
 *::before {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
 }
 
-@import "layout.scss";
-@import "header-navbar.scss";
-@import "signin.scss";
-@import "signup.scss";
+body {
+    font-family: "Open Sans";
+    color: #808080;
+}
+
+
+@import 'layout';
+@import 'headernavbar';
+@import 'auth/signin';
+@import 'auth/signup';
+
+@import 'page-title';
+@import 'form-fields';
+@import 'details';
+
+@import 'account/account';
+@import 'account/purchase-history';
+@import 'account/account-information';
